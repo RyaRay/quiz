@@ -108,13 +108,10 @@
                 disable(button);
             }
 
-            const answer = optionButtons.value;
-            if (answer === fact.answer) {
-                optionButtons[0].classList.add("correct")
-                optionButtons[1].classList.add("incorrect")
+            if (isCorrect(buttons.value)) {
+                buttons.classList.add("correct")
             } else {
-                optionButtons[0].classList.add("correct")
-                optionButtons[1].classList.add("incorrect")
+                buttons.classList.add("incorrect")
             }
         })
     }
